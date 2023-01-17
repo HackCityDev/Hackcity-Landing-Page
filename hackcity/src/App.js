@@ -1,6 +1,8 @@
 import "./App.css";
 import Home from "./pages/Home";
-import Hire from "./pages/Hire";
+import StepOne from "./pages/StepOne"
+import StepTwo from "./pages/StepTwo"
+import StepThree from "./pages/StepThree"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/hire" element={<Hire />} />
+          <Route path="/hire" element={<StepOne />} />
+          <Route path="/stepTwo" element={<StepTwo />} />
+          <Route path="/stepThree" element={<StepThree />} />
       
         </Routes>
 

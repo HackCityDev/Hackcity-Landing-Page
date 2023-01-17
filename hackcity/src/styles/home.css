@@ -20,14 +20,13 @@ body {
   background: linear-gradient(192.7deg, #152a47 14.55%, #032555 91.2%);
   border: 1px solid #000000;
 }
-.hire-next-button {
+.hire-next-button, .hire-prev-button {
   float: right;
   background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
   color: #c0c0c0;
   font-size: 14px;
   width: 180px;
-  height: 55px;
-  margin-top: 10px;
+  height: 45px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -39,5 +38,18 @@ body {
   background: #f1f6fd;
   border: 1px solid #032555;
   color: #032555;
+  transition: 200ms ease-in-out;
+}
+
+.hire-prev-button{
+  background:#eef2ff!important;
+  float: left;
+  color: #032555;
+  border: 1px solid #032555;
+}
+
+.hire-prev-button:hover{
+  background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%)!important;
+  color: #c0c0c0;
   transition: 200ms ease-in-out;
 }

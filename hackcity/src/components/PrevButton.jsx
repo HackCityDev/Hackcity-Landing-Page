@@ -1,15 +1,16 @@
 import React from 'react'
 
-function Button({pic}) {
+function Button({pic, value}) {
     return (
        <div>
-        <button className="hire-next-button text-center">
-              Next{" "}
+        <button className="hire-prev-button text-center">
+          
               <img
-                className="ml-12 w-[12px] mt-0 "
+                className="relative right-[30px] w-[12px] mt-0 "
                 src={pic}
                 alt="arrow right"
               />
+                {value}
             </button>
        </div> 
     )

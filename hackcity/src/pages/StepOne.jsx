@@ -1,22 +1,22 @@
 import React from "react";
 import man from "../assets/Images/hire/pana (3).png";
 import ArrowR from "../assets/Images/hire/ArrowRight (2).png";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+import Logo from "../components/Logo";
+import Button from "../components/NextButton";
+import Input from "../components/Input";
+import Textarea from "../components/Textarea";
 
-import Footer from "./Footer";
-import Logo from "./Logo";
-import Button from "./Button";
-import Input from "./Input";
-import Textarea from "./Textarea";
-
-function HireOne() {
+function StepOne() {
   return (
     <div className="">
       <section className="flex text-center md:flex-row">
         <div className="bg-[#f1f6fd] w-[35%] h-[100vh]">
-          <h1 className=" mt-10 text-[#032555] text-[20px] font-semibold">
-            Hire Us
-          </h1>
-          <p className="text-[12px]">step one</p>
+        <h1 className=" mt-10 text-[#032555] text-[22px] font-semibold">
+              Hire Us
+            </h1>
+            <p className="text-[13px] text-[#656464]">step One</p>
           <img
             className="w-[550px] mt-12 z-20 absolute"
             src={man}
@@ -30,7 +30,9 @@ function HireOne() {
             handle every projects with experience
           </h4>
 
-          <h6 className="text-[14px] mb-2 text-[#656464] font-semibold">0% Completed</h6>
+          <h6 className="text-[14px] mb-2 text-[#656464] font-semibold">
+            0% Completed
+          </h6>
           <hr className="mb-12 border border-[5px] rounded border-[#d9e7ff]" />
           <div>
             <div className="mb-3 text-[15px] flex items-center">
@@ -81,7 +83,11 @@ function HireOne() {
           <section>
             <Textarea />
             <br />
-            <Button pic={ArrowR} id ='hire-next-button' />
+            <Link to="/stepTwo">
+              <Button 
+              pic={ArrowR}
+              value ="Next" />
+            </Link>
           </section>
         </div>
       </section>
@@ -94,4 +100,4 @@ function HireOne() {
   );
 }
 
-export default HireOne;
+export default StepOne;
