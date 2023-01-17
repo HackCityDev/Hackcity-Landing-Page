@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 function Hero() {
   return (
     <div className="hero-wrapper bg-[#f1f6fd]">
-      <div className="hero flex flex-col items-center py-10 px-5 md:flex-row py-12 px-20 justify-between">
+      <div className="hero flex flex-col items-center py-10 px-5 md:flex-row py-12 px-24 justify-between">
         <div className="hero-text z-20 md:w-[50%]">
           <h5 className="text-[#eb5757] font-semibold mb-4">
             HackCity Tech Inc.
