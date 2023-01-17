@@ -14,7 +14,7 @@ function Join() {
           team to build their products efficiently, we also provide marketing
           and business operations support/resources.
         </p>
-        <button className="bg-[#032555] text-white text-[13px] px-12 py-3 mt-10 flex items-center">
+        <button className="bg-[#032555] text-white text-[13px] px-12 py-3 mb-10 mt-10 flex items-center">
           Join us{" "}
           <img className="ml-3 w-[12px] mt-1" src={arrow} alt="arrow right" />
         </button>

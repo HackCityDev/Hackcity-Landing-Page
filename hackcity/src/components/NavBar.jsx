@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/Images/logo.png";
 import "../styles/home.css";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -17,9 +18,11 @@ function NavBar() {
         </div>
 
         <div className="nav-button">
-          <button className="bg-[#eb5757] text-white text-[13px] py-2 px-3 rounded-[17px] hover:bg-gray-900 hover:text-white">
-            Hire Developers
-          </button>
+          <Link to="/hire">
+            <button className="bg-[#eb5757] text-white text-[13px] py-2 px-3 rounded-[17px] hover:bg-gray-900 hover:text-white">
+              Hire Developers
+            </button>
+          </Link>
         </div>
       </div>
     </div>

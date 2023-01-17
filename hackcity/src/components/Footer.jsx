@@ -11,8 +11,8 @@ import message from "../assets/Images/message.png";
 
 function Footer() {
   return (
-    <div className="footer mt-10">
-      <div className="py-10 px-20 grid grid-cols-2 mt-10">
+    <div className="footer mt-0">
+      <div className="py-16 px-20 grid grid-cols-2 mt-10">
         <div className="">
           <img src={logo} className="w-[30px] mb-5" alt="logo" />
           <p className="text-[13px] text-[#6b7280]">
