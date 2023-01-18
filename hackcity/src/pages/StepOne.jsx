@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Logo from "../components/Logo";
 import Button from "../components/NextButton";
-import Input from "../components/Input";
+import CheckBox from "../components/CheckBox";
 import Textarea from "../components/Textarea";
 
 function StepOne() {
@@ -50,19 +50,19 @@ function StepOne() {
 
             <div className="flex md:flex-row justify-between">
               <div className="">
-                <Input name="SaaS (Software as a Service) Development" />
-                <Input name="Mobile App Development" />
-                <Input name="MVP Development" />
-                <Input name="Blockchain Application" />
-                <Input name="Training" />
+                <CheckBox name="SaaS (Software as a Service) Development" />
+                <CheckBox name="Mobile App Development" />
+                <CheckBox name="MVP Development" />
+                <CheckBox name="Blockchain Application" />
+                <CheckBox name="Training" />
               </div>
 
               <div className="">
-                <Input name="Web Application Development" />
-                <Input name="API Development" />
-                <Input name="UI\UX Design" />
-                <Input name="Smart contract" />
-                <Input name="Consultation" />
+                <CheckBox name="Web Application Development" />
+                <CheckBox name="API Development" />
+                <CheckBox name="UI\UX Design" />
+                <CheckBox name="Smart contract" />
+                <CheckBox name="Consultation" />
               </div>
             </div>
 
@@ -83,7 +83,7 @@ function StepOne() {
           <section>
             <Textarea />
             <br />
-            <Link to="/stepTwo">
+            <Link to="/step-two">
               <Button 
               pic={ArrowR}
               value ="Next" />

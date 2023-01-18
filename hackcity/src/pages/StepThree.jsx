@@ -6,7 +6,7 @@ import Button2 from "../components/PrevButton";
 import Footer from "../components/Footer";
 import Logo from "../components/Logo";
 import Button from "../components/NextButton";
-import Input from "../components/Input";
+import CheckBox from "../components/CheckBox";
 
 import { Link } from "react-router-dom";
 
@@ -46,9 +46,9 @@ function StepThree() {
 
             <div className="">
               <div className="">
-                <Input name="Short Term (Up to 3 months)" />
-                <Input name="Medium Term (3 to 6 Months)" />
-                <Input name="Long Term (More than 6 months)" />
+                <CheckBox name="Short Term (Up to 3 months)" />
+                <CheckBox name="Medium Term (3 to 6 Months)" />
+                <CheckBox name="Long Term (More than 6 months)" />
               </div>
 
             
@@ -61,18 +61,18 @@ function StepThree() {
             </div>
           </div>
           <div className="">
-                <Input name="Immediately" />
-                <Input name="Within 2 weeks" />
-                <Input name="Within a month" />
-                <Input name="Not decided" />
+                <CheckBox name="Immediately" />
+                <CheckBox name="Within 2 weeks" />
+                <CheckBox name="Within a month" />
+                <CheckBox name="Not decided" />
               </div>
           <section className ='mt-8'>
 
-            <Link to="/stepFour">
+            <Link to="/step-four">
               <Button pic={ArrowR} value="Next" className="hire-next-button" />
             </Link>
 
-            <Link to="/stepTwo">
+            <Link to="/step-two">
               <Button2
                 pic={ArrowL}
                 value="Previous"

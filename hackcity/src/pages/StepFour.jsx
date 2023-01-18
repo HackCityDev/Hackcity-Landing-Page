@@ -6,12 +6,12 @@ import Button2 from "../components/PrevButton";
 import Footer from "../components/Footer";
 import Logo from "../components/Logo";
 import Button from "../components/NextButton";
-import Input from "../components/Input";
+import CheckBox from "../components/CheckBox";
 
 import { Link } from "react-router-dom";
 
 
-function StepThree() {
+function StepFour() {
   return (
     <div className="">
       <section className="flex text-center md:flex-row">
@@ -47,18 +47,18 @@ function StepThree() {
             </div>
           </div>
           <div className="">
-                <Input name="$1,000 - $3,000+" />
-                <Input name="$4,000 - $9,000+" />
-                <Input name="$10,000 and above" />
-                <Input name="Not decided" />
+                <CheckBox name="$1,000 - $3,000+" />
+                <CheckBox name="$4,000 - $9,000+" />
+                <CheckBox name="$10,000 and above" />
+                <CheckBox name="Not decided" />
               </div>
           <section className ='mt-8'>
 
-            <Link to="/stepFive">
+            <Link to="/step-five">
               <Button pic={ArrowR} value="Next" className="hire-next-button" />
             </Link>
 
-            <Link to="/stepThree">
+            <Link to="/step-three">
               <Button2
                 pic={ArrowL}
                 value="Previous"
@@ -77,4 +77,4 @@ function StepThree() {
   );
 }
 
-export default StepThree;
+export default StepFour;

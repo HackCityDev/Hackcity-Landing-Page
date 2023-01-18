@@ -12,7 +12,7 @@ import message from "../assets/Images/message.png";
 function Footer() {
   return (
     <div className="footer mt-0">
-      <div className="py-16 px-20 grid grid-cols-2 mt-10">
+      <div className="py-16 px-6 md:px-20 grid md:grid-cols-2 md:mt-10 mt-5">
         <div className="">
           <img src={logo} className="w-[30px] mb-5" alt="logo" />
           <p className="text-[13px] text-[#6b7280]">
@@ -28,8 +28,8 @@ function Footer() {
           </div>
         </div>
 
-        <div className=" flex text-[#6b7280] leading-[30px] text-[13px] justify-between">
-          <div>
+        <div className=" flex flex-wrap md:flex-row text-[#6b7280] leading-[30px] text-[13px] md:justify-between">
+          <div className ='mr-10 md:mr-0'>
             <h4 className="text-[#9ca3af]  ">SOLUTIONS</h4>
             <p>Marketing</p>
             <p>Analytics</p>
@@ -37,7 +37,7 @@ function Footer() {
             <p>Insights</p>
           </div>
 
-          <div>
+          <div className ='mr-10 md:mr-0'>
             <h4 className="text-[#9ca3af]">SOLUTIONS</h4>
             <p>Marketing</p>
             <p>Analytics</p>
@@ -45,7 +45,7 @@ function Footer() {
             <p>Insights</p>
           </div>
 
-          <div>
+          <div className ='mr-10 mt-5 md:mr-0 md:mt-0'>
             <h4 className="text-[#9ca3af]">CONTACT US</h4>
             <div className="flex items-center py-1">
               {" "}
@@ -72,7 +72,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <hr className="w-[88%] m-auto mt-10 border-[#6b7280]" />
+      <hr className="w-[88%] m-auto md:mt-10 border-[#6b7280]" />
       <p className="text-center text-[#9ca3af] py-5 text-[13px]">
         &copy; 2023 HackCity, Inc. All rights reserved
       </p>

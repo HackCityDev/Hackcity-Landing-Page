@@ -6,7 +6,7 @@ import Button2 from "../components/PrevButton";
 import Footer from "../components/Footer";
 import Logo from "../components/Logo";
 import Button from "../components/NextButton";
-import Input from "../components/Input";
+import CheckBox from "../components/CheckBox";
 import Textarea from "../components/Textarea";
 
 import { Link } from "react-router-dom";
@@ -46,17 +46,17 @@ function StepTwo() {
 
             <div className="flex md:flex-row justify-between">
               <div className="">
-                <Input name="Healthcare and Pharma" />
-                <Input name="Technology Company" />
-                <Input name="Logistics & Transport" />
-                <Input name="Insurance" />
+                <CheckBox name="Healthcare and Pharma" />
+                <CheckBox name="Technology Company" />
+                <CheckBox name="Logistics & Transport" />
+                <CheckBox name="Insurance" />
               </div>
 
               <div className="">
-                <Input name="Fintech/Finance" />
-                <Input name="Automotive" />
-                <Input name="Education" />
-                <Input name="Blockchain" />
+                <CheckBox name="Fintech/Finance" />
+                <CheckBox name="Automotive" />
+                <CheckBox name="Education" />
+                <CheckBox name="Blockchain" />
               </div>
             </div>
 
@@ -70,7 +70,7 @@ function StepTwo() {
             <Textarea />
             <br />
 
-            <Link to="/stepThree">
+            <Link to="/step-three">
               <Button pic={ArrowR} value="Next" className="hire-next-button" />
             </Link>
 
