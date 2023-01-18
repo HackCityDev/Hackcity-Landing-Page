@@ -2,7 +2,7 @@ import React from "react";
 import why from "../assets/Images/why.png";
 import arrow from "../assets/Images/ArrowRight.png";
 
-function Why() {
+function Business() {
   return (
     <div className="flex flex-col mt-20 items-center md:flex-row px-20">
       <div className="w-[50%]">
@@ -37,4 +37,4 @@ function Why() {
   );
 }
 
-export default Why;
+export default Business;

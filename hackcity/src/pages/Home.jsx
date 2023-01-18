@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import WhoWeAre from "../components/WhoWeAre";
 import Logo from "../components/Logo";
 import Services from "../components/Services";
-import Why from "../components/Why";
+import Business from "../components/Business";
 import Join from "../components/Join";
 import Footer from "../components/Footer";
 
@@ -16,7 +16,7 @@ function Home() {
       <WhoWeAre />
       <Logo />
       <Services />
-      <Why />
+      <Business />
       <Join />
       <Footer />
     </div>
