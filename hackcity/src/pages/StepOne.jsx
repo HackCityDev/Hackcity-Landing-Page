@@ -11,23 +11,23 @@ import Textarea from "../components/Textarea";
 function StepOne() {
   return (
     <div className="">
-      <section className="flex text-center md:flex-row">
-        <div className="bg-[#f1f6fd] w-[35%] h-[100vh]">
+      <section className="flex flex-col text-center lg:flex-row">
+        <div className="bg-[#f1f6fd] lg:w-[35%] h-[100vh]">
         <h1 className=" mt-10 text-[#032555] text-[22px] font-semibold">
               Hire Us
             </h1>
             <p className="text-[13px] text-[#656464]">step One</p>
           <img
-            className="w-[550px] mt-12 z-20 absolute"
+            className="w-[400px] m-auto lg:w-[550px] mt-4 lg:mt-12 z-20 lg:absolute"
             src={man}
             alt="illustration"
           />
         </div>
 
-        <div className="p-8 text-left ml-10 z-30">
+        <div className="p-8 text-left mt-10 lg:mt-0 lg:ml-10 z-30">
           <h4 className="text-[#032555] text-[16px] mb-8 font-semibold">
             We boast of highly skilled and experienced tech <br /> personnel, We
-            handle every projects with experience
+            handle every projects with experience.
           </h4>
 
           <h6 className="text-[14px] mb-2 text-[#656464] font-semibold">
@@ -48,7 +48,7 @@ function StepOne() {
               </h3>
             </div>
 
-            <div className="flex md:flex-row justify-between">
+            <div className="flex flex-col lg:flex-row justify-between">
               <div className="">
                 <CheckBox name="SaaS (Software as a Service) Development" />
                 <CheckBox name="Mobile App Development" />
