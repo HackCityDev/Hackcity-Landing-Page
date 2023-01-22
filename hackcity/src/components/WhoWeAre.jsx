@@ -11,7 +11,7 @@ function WhoWeAre() {
         <div className="md:ml-10 z-20 m-auto mt-10 md:mt-0">
           <img
             src={who}
-            className="h-64 w-96 object-cover md:max-w-[270px] lg:max-w-[400px] relative lg:left-[-50px] md:left-[-50px] md:max-h-[380px]"
+            className=" w-96 md:max-w-[270px] lg:max-w-[400px] relative lg:left-[-50px] md:left-[-50px] md:max-h-[380px]"
             alt="who we are"
           />
         </div>
@@ -34,7 +34,7 @@ function WhoWeAre() {
       </section>
 
       <section className="who-card flex flex-col items-center my-14 md:flex-row justify-between px-0 :px-20">
-        <div className="shadow-2xl shadow-inner rounded-[14px] mb-10 p-5 w-[270px] h-[200px] md:w-[350px] md:h-[200px] text-left items-center m-auto">
+        <div className="shadow-2xl shadow-inner rounded-[14px] mb-10 p-5 w-[300px] h-[200px] md:w-[350px] md:h-[200px] text-left items-center m-auto">
           <div className="flex items-center mb-10 md:mb-5 font-bold">
             <img className="w-[40px]" src={gear} alt="gear" />
             <h5 className="ml-5">Tech. + Business</h5>
@@ -44,7 +44,7 @@ function WhoWeAre() {
             development services
           </p>
         </div>
-        <div className="shadow-2xl shadow-inner rounded-[14px] mb-10 p-5 w-[270px] h-[200px] md:w-[350px] md:h-[200px] text-left items-center m-auto">
+        <div className="shadow-2xl shadow-inner rounded-[14px] mb-10 p-5 w-[300px] h-[200px] md:w-[350px] md:h-[200px] text-left items-center m-auto">
           <div className="flex items-center mb-10 md:mb-5 font-bold">
             <img className="w-[40px]" src={vetted} alt="vetted" />
             <h5 className="ml-5"> Vetted + Experienced</h5>
@@ -54,7 +54,7 @@ function WhoWeAre() {
             business needs
           </p>
         </div>
-        <div className="shadow-2xl shadow-inner rounded-[14px] mb-10 p-5 w-[270px] h-[200px] md:w-[350px] md:h-[200px] text-left items-center m-auto">
+        <div className="shadow-2xl shadow-inner rounded-[14px] mb-10 p-5 w-[300px] h-[200px] md:w-[350px] md:h-[200px] text-left items-center m-auto">
           <div className="flex items-center mb-6 md:mb-5 font-bold">
             <img className="w-[40px]" src={goal} alt="goal" />
             <h5 className="ml-5">Effective + Efficient</h5>

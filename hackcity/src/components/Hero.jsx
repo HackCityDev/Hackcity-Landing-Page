@@ -7,7 +7,7 @@ function Hero() {
     <div className="hero-wrapper bg-[#f1f6fd] lg:h-[600px]">
       <div className="hero flex flex-col items-center py-10 px-6 md:flex-row md:py-12 md:px-8 lg:px-24 justify-between">
         <div className="hero-text z-20 md:w-[70%] lg:w-[80%]">
-          <h5 className="text-[#eb5757] font-semibold mb-2 md:mb-4">
+          <h5 className="text-[#eb5757] font-semibold mb-2 mt-10 md:mt-0 md:mt-0 md:mb-4">
             HackCity Tech Inc.
           </h5>
           <h1 className="text-[#032555] text-[25px] md:text-[30px] mb-6 font-semibold md:text-[35px] lg:text-[43px] md:leading-[60px] md:mb-8">

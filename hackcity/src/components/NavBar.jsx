@@ -12,7 +12,7 @@ function NavBar() {
       <div className="navbar flex flex-row items-center justify-between py-4 px-6 md:px-8 md:my-2 lg:px-24">
         <div className="logo">
           <img
-            className="w-[110px] md:w-[100px]"
+            className="w-[120px] md:w-[100px]"
             src={logo}
             alt="hackcity logo"
           />
@@ -60,9 +60,9 @@ function NavBar() {
               setIsNavExpanded(!isNavExpanded);
             }}
           >
-            <span className="block w-[30px] py-0 h-[2px] bg-gray-600 animate-pulse"></span>
-            <span className="block w-[30px] py-0 h-[2px] bg-gray-600 animate-pulse"></span>
-            <span className="block w-[30px] py-0 h-[2px] bg-gray-600 animate-pulse"></span>
+            <span className="block w-[28px] py-0 h-[2px] bg-gray-600"></span>
+            <span className="block w-[30px] py-0 h-[2px] bg-gray-600"></span>
+            <span className="block w-[30px] py-0 h-[2px] bg-gray-600"></span>
           </div>
         </div>
       </div>
