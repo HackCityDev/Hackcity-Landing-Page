@@ -14,20 +14,20 @@ import { Link } from "react-router-dom";
 function StepTwo() {
   return (
     <div className="">
-      <section className="flex text-center md:flex-row">
-        <div className="bg-[#f1f6fd] w-[35%] h-[118vh]">
+      <section className="flex flex-col text-center lg:flex-row">
+        <div className="bg-[#f1f6fd] lg:w-[35%] h-[90vh] lg:h-[118vh]">
           <h1 className=" mt-10 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
           <p className="text-[13px] text-[#656464]">step Two</p>
           <img
-            className="w-[550px] top-[-10px] z-20 absolute"
+            className="w-[400px] m-auto lg:w-[550px] relative top-[-130px] lg:top-[-10px] z-20 lg:absolute"
             src={man}
             alt="illustration"
           />
         </div>
 
-        <div className="p-8 text-left ml-10 z-30">
+        <div className="p-8 text-left mt-10 lg:mt-0 lg:ml-10 z-30">
           <h4 className="text-[#032555] text-[16px] mb-8 font-semibold">
             We boast of highly skilled and experienced tech <br /> personnel, We
             handle every projects with experience
@@ -44,7 +44,7 @@ function StepTwo() {
               <h3>What is the Application/Product Domain?</h3>
             </div>
 
-            <div className="flex md:flex-row justify-between">
+            <div className="flex flex-col md:flex-row justify-between">
               <div className="">
                 <CheckBox name="Healthcare and Pharma" />
                 <CheckBox name="Technology Company" />

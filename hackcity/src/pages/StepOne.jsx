@@ -48,7 +48,7 @@ function StepOne() {
               </h3>
             </div>
 
-            <div className="flex flex-col lg:flex-row justify-between">
+            <div className="flex flex-col md:flex-row justify-between">
               <div className="">
                 <CheckBox name="SaaS (Software as a Service) Development" />
                 <CheckBox name="Mobile App Development" />
