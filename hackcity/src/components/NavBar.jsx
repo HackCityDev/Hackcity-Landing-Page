@@ -61,8 +61,8 @@ function NavBar() {
             }}
           >
             <span className="block w-[28px] py-0 h-[2px] bg-gray-600"></span>
-            <span className="block w-[30px] py-0 h-[2px] bg-gray-600"></span>
-            <span className="block w-[30px] py-0 h-[2px] bg-gray-600"></span>
+            <span className="block w-[28px] py-0 h-[2px] bg-gray-600"></span>
+            <span className="block w-[28px] py-0 h-[2px] bg-gray-600"></span>
           </div>
         </div>
       </div>

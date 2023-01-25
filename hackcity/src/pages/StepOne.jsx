@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import man from "../assets/Images/hire/pana (3).png";
 import ArrowR from "../assets/Images/hire/ArrowRight (2).png";
 import { Link } from "react-router-dom";
@@ -9,12 +9,23 @@ import CheckBox from "../components/CheckBox";
 import Textarea from "../components/Textarea";
 
 function StepOne() {
+
+const [option, setOption] = useState("")
+const handleOption = (e) => {
+  setOption(e.target.value)
+  console.log(option)
+}
+useEffect(() => {
+setOption('helloola')
+}, [])
+
   return (
     <div className="">
       <section className="flex flex-col text-center lg:flex-row">
         <div className="bg-[#f1f6fd] lg:w-[35%] h-[100vh]">
         <h1 className=" mt-10 text-[#032555] text-[22px] font-semibold">
               Hire Us
+              {option}
             </h1>
             <p className="text-[13px] text-[#656464]">step One</p>
           <img
@@ -36,7 +47,7 @@ function StepOne() {
           <hr className="mb-12 border border-[5px] rounded border-[#d9e7ff]" />
           <div>
             <div className="mb-3 text-[15px] flex items-center">
-              <div className="w-[15px] h-[15px] mr-2 bg-[#032555] rounded-2xl"></div>
+              <div className="w-[15px] h-[15px] mr-2 bg-[#032555] rounded-2xl "></div>
               <h3>
                 {" "}
                 What can{" "}
@@ -48,9 +59,14 @@ function StepOne() {
               </h3>
             </div>
 
+<div>
+  testingggggggggggggggggg
+<input type="radio" value='hellotolu' onClick={handleOption} className="mr-3 ml-2 border h-[20px] w-[20px] border-red-700" />
+</div>
+
             <div className="flex flex-col md:flex-row justify-between">
               <div className="">
-                <CheckBox name="SaaS (Software as a Service) Development" />
+                <CheckBox value ='hello' onClick={handleOption} name="SaaS (Software as a Service) Development" />
                 <CheckBox name="Mobile App Development" />
                 <CheckBox name="MVP Development" />
                 <CheckBox name="Blockchain Application" />

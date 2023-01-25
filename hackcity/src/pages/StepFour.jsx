@@ -14,20 +14,20 @@ import { Link } from "react-router-dom";
 function StepFour() {
   return (
     <div className="">
-      <section className="flex text-center md:flex-row">
-        <div className="bg-[#f1f6fd] w-[35%] h-[118vh]">
+      <section className="flex text-center flex-col lg:flex-row">
+        <div className="bg-[#f1f6fd] lg:w-[35%] h-[70vh] lg:h-[118vh]">
           <h1 className=" mt-12 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
           <p className="text-[13px] text-[#656464]">step Four</p>
           <img
-            className="w-[550px] mt-24 z-20 absolute"
+            className="w-[400px] m-auto lg:w-[550px] lg:mt-24 z-20 lg:absolute"
             src={man}
             alt="illustration"
           />
         </div>
 
-        <div className="p-8 text-left mt-4 ml-10 z-30">
+        <div className="p-8 text-left mt-4 lg:ml-10 z-30">
           <h4 className="text-[#032555] text-[16px] mb-8 font-semibold">
             We boast of highly skilled and experienced tech <br /> personnel, We
             handle every projects with experience
@@ -37,7 +37,7 @@ function StepFour() {
             60% Completed
           </h6>
           <hr className="border relative top-[12px] border-[6px] w-[57%] rounded-2xl border-[#032555]" />
-          <hr className="mb-16 border border-[6px] rounded-2xl w-[700px] border-[#d9e7ff]" />
+          <hr className="mb-16 border border-[6px] rounded-2xl w-[100%] lg:w-[700px] border-[#d9e7ff]" />
           <div>
 
             <div className="mb-3 mt-8 text-[15px] flex items-center">
