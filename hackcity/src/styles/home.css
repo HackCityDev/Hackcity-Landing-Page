@@ -42,7 +42,7 @@ body {
   text-align: center;
   
 }
-.hire-next-button:hover, .button1:hover {
+.hire-hover:hover, .button1:hover {
   background: #f1f6fd;
   border: 1px solid #032555;
   color: #032555;

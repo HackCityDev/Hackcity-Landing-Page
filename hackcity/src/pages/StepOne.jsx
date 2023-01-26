@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import man from "../assets/Images/hire/pana (3).png";
 import ArrowR from "../assets/Images/hire/ArrowRight (2).png";
 import { Link } from "react-router-dom";
@@ -8,26 +8,15 @@ import Button from "../components/NextButton";
 import CheckBox from "../components/CheckBox";
 import Textarea from "../components/Textarea";
 
-function StepOne() {
-
-const [option, setOption] = useState("")
-const handleOption = (e) => {
-  setOption(e.target.value)
-  console.log(option)
-}
-useEffect(() => {
-setOption('helloola')
-}, [])
-
+function StepOne({ status, handleOption, handleChange }) {
   return (
     <div className="">
       <section className="flex flex-col text-center lg:flex-row">
         <div className="bg-[#f1f6fd] lg:w-[35%] h-[100vh]">
-        <h1 className=" mt-10 text-[#032555] text-[22px] font-semibold">
-              Hire Us
-              {option}
-            </h1>
-            <p className="text-[13px] text-[#656464]">step One</p>
+          <h1 className=" mt-10 text-[#032555] text-[22px] font-semibold">
+            Hire Us
+          </h1>
+          <p className="text-[13px] text-[#656464]">step One</p>
           <img
             className="w-[400px] m-auto lg:w-[550px] mt-4 lg:mt-12 z-20 lg:absolute"
             src={man}
@@ -59,26 +48,63 @@ setOption('helloola')
               </h3>
             </div>
 
-<div>
-  testingggggggggggggggggg
-<input type="radio" value='hellotolu' onClick={handleOption} className="mr-3 ml-2 border h-[20px] w-[20px] border-red-700" />
-</div>
-
             <div className="flex flex-col md:flex-row justify-between">
               <div className="">
-                <CheckBox value ='hello' onClick={handleOption} name="SaaS (Software as a Service) Development" />
-                <CheckBox name="Mobile App Development" />
-                <CheckBox name="MVP Development" />
-                <CheckBox name="Blockchain Application" />
-                <CheckBox name="Training" />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                 
+                  title="SaaS (Software as a Service) Development"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  
+                  title="Mobile App Development"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="MVP Development"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Blockchain Application"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Training"
+                />
               </div>
 
               <div className="">
-                <CheckBox name="Web Application Development" />
-                <CheckBox name="API Development" />
-                <CheckBox name="UI\UX Design" />
-                <CheckBox name="Smart contract" />
-                <CheckBox name="Consultation" />
+                <CheckBox
+                  title="Web Application Development"
+                  status={status}
+                  handleOption={handleOption}
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="API Development"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="UI\UX Design"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Smart contract"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Consultation"
+                />
               </div>
             </div>
 
@@ -97,13 +123,33 @@ setOption('helloola')
           </div>
 
           <section>
-            <Textarea />
+         
+            <Textarea 
+           status ={status}
+           handleChange = {handleChange}
+            
+            />
             <br />
-            <Link to="/step-two">
-              <Button 
-              pic={ArrowR}
-              value ="Next" />
-            </Link>
+
+            {!status ? (
+              <div>
+                <Button
+                  className=" hire-next-button text-center hover:bg-[#032555]  cursor-not-allowed opacity-[0.5]"
+                  pic={ArrowR}
+                  value="Next"
+                />
+              </div>
+            ) : (
+              <div>
+                <Link to="/step-two">
+                  <Button
+                    className=" hire-next-button hire-hover text-center cursor-pointer"
+                    pic={ArrowR}
+                    value="Next"
+                  />
+                </Link>
+              </div>
+            )}
           </section>
         </div>
       </section>

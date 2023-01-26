@@ -11,7 +11,7 @@ import Textarea from "../components/Textarea";
 
 import { Link } from "react-router-dom";
 
-function StepTwo() {
+function StepTwo({ status, handleOption, handleChange }) {
   return (
     <div className="">
       <section className="flex flex-col text-center lg:flex-row">
@@ -19,7 +19,7 @@ function StepTwo() {
           <h1 className=" mt-10 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
-          <p className="text-[13px] text-[#656464]">step Two</p>
+          <p className="text-[13px] text-[#656464] mb-8 md:mb-0">step Two</p>
           <img
             className="w-[400px] m-auto lg:w-[550px] relative top-[-130px] lg:top-[-10px] z-20 lg:absolute"
             src={man}
@@ -46,17 +46,49 @@ function StepTwo() {
 
             <div className="flex flex-col md:flex-row justify-between">
               <div className="">
-                <CheckBox name="Healthcare and Pharma" />
-                <CheckBox name="Technology Company" />
-                <CheckBox name="Logistics & Transport" />
-                <CheckBox name="Insurance" />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Healthcare and Pharma"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Technology Company"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Logistics & Transport"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Insurance"
+                />
               </div>
 
               <div className="">
-                <CheckBox name="Fintech/Finance" />
-                <CheckBox name="Automotive" />
-                <CheckBox name="Education" />
-                <CheckBox name="Blockchain" />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Fintech/Finance"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Automotive"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Education"
+                />
+                <CheckBox
+                  status={status}
+                  handleOption={handleOption}
+                  title="Blockchain"
+                />
               </div>
             </div>
 
@@ -67,12 +99,28 @@ function StepTwo() {
           </div>
 
           <section>
-            <Textarea />
+            <Textarea status={status} handleChange={handleChange} />
             <br />
 
-            <Link to="/step-three">
-              <Button pic={ArrowR} value="Next" className="hire-next-button" />
-            </Link>
+            {!status ? (
+              <div>
+                <Button
+                  className=" hire-next-button text-center hover:bg-[#032555]  cursor-not-allowed opacity-[0.5]"
+                  pic={ArrowR}
+                  value="Next"
+                />
+              </div>
+            ) : (
+              <div>
+                <Link to="/step-three">
+                  <Button
+                    className=" hire-next-button hire-hover text-center cursor-pointer"
+                    pic={ArrowR}
+                    value="Next"
+                  />
+                </Link>
+              </div>
+            )}
 
             <Link to="/hire">
               <Button2
