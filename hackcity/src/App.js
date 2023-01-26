@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 
 import Home from "./pages/Home";
 import StepOne from "./pages/StepOne";
@@ -16,12 +16,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [status, setStatus] = useState(false);
 
-  useEffect(() => {
-    handleChange();
-  }, []);
-
   const handleChange = (e) => {
-    var text = document.getElementById("message").value;
+    var text = document.getElementById("message").value || "";
 
     if (text === "") {
       setStatus(false);
