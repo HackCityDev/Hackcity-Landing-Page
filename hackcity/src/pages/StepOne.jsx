@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import man from "../assets/Images/hire/pana (3).png";
 import ArrowR from "../assets/Images/hire/ArrowRight (2).png";
 import { Link } from "react-router-dom";
@@ -8,7 +8,30 @@ import Button from "../components/NextButton";
 import CheckBox from "../components/CheckBox";
 import Textarea from "../components/Textarea";
 
-function StepOne({ status, handleOption, handleChange }) {
+function StepOne({ value, callback }) {
+  const [checkbox, setCheckbox] = useState(false);
+  const [text, setText] = useState("");
+
+  function checkIfFielsIsEmpty() {
+    const file = document.querySelectorAll(".check");
+    const message = document.querySelector("#message").value;
+
+    let checkedCount = 0;
+    file.forEach((element) => {
+      if (element.checked) {
+        checkedCount++;
+      }
+    });
+
+    var msgLength = message.trim().length;
+
+    if (checkedCount === 0 && msgLength === 0) {
+      setCheckbox(false);
+    } else {
+      setCheckbox(true);
+    }
+  }
+
   return (
     <div className="">
       <section className="flex flex-col text-center lg:flex-row">
@@ -51,59 +74,95 @@ function StepOne({ status, handleOption, handleChange }) {
             <div className="flex flex-col md:flex-row justify-between">
               <div className="">
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                 
-                  title="SaaS (Software as a Service) Development"
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="SaaS (Software as a Service) Development"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  
-                  title="Mobile App Development"
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="Mobile App Development"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="MVP Development"
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="MVP Development"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Blockchain Application"
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="Blockchain Application"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Training"
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="Training"
                 />
               </div>
 
               <div className="">
                 <CheckBox
-                  title="Web Application Development"
-                  status={status}
-                  handleOption={handleOption}
+                  value="Web Application Development"
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="API Development"
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="API Development"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="UI\UX Design"
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="UI\UX Design"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Smart contract"
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="Smart contract"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Consultation"
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="Consultation"
                 />
               </div>
             </div>
@@ -123,15 +182,17 @@ function StepOne({ status, handleOption, handleChange }) {
           </div>
 
           <section>
-         
-            <Textarea 
-           status ={status}
-           handleChange = {handleChange}
-            
+            <Textarea
+              id="message"
+              type="text"
+              callback={(e) => {
+                setText(e.target.value);
+                checkIfFielsIsEmpty();
+              }}
             />
             <br />
 
-            {!status ? (
+            {!checkbox && !text ? (
               <div>
                 <Button
                   className=" hire-next-button text-center hover:bg-[#032555]  cursor-not-allowed opacity-[0.5]"

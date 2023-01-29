@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import man from "../assets/Images/hire/rafiki.png";
 import ArrowL from "../assets/Images/hire/ArrowRight (1).png";
 import ArrowR from "../assets/Images/hire/ArrowRight (2).png";
@@ -11,7 +11,37 @@ import Textarea from "../components/Textarea";
 
 import { Link } from "react-router-dom";
 
-function StepFive() {
+function StepFive(callback, id) {
+  const [input1, setInput1] = useState("");
+  const [input2, setInput2] = useState("");
+  const [input3, setInput3] = useState("");
+  const [input4, setInput4] = useState("");
+
+  const [disable, setDisable] = useState(true);
+
+  function checkIfFielsIsEmpty() {
+    const box1 = document.querySelector("#input-box1").value;
+    const box2 = document.querySelector("#input-box2").value;
+    const box3 = document.querySelector("#input-box3").value;
+    const box4 = document.querySelector("#input-box4").value;
+
+    var inputLength1 = box1.trim().length;
+    var inputLength2 = box2.trim().length;
+    var inputLength3 = box3.trim().length;
+    var inputLength4 = box4.trim().length;
+
+    if (
+      inputLength1 > 0 &&
+      inputLength2 > 0 &&
+      inputLength3 > 0 &&
+      inputLength4 > 0
+    ) {
+      setDisable(false);
+    } else {
+      setDisable(true);
+    }
+  }
+
   return (
     <div className="">
       <section className="flex text-center flex-col lg:flex-row">
@@ -53,8 +83,18 @@ function StepFive() {
                   >
                     Full Name
                   </label>
-                  <Input name="Healthcare and Pharma" />
+                  <Input
+                    className="text-[14px] relative top-[-10px]"
+                    id="input-box1"
+                    value={input1}
+                    callback={(e) => {
+                      setInput1(e.target.value);
+                      checkIfFielsIsEmpty();
+                    }}
+                    name="Healthcare and Pharma"
+                  />
                 </div>
+
                 <div className="mt-5 mb-5">
                   <label
                     className="text-[14px] relative top-[-10px]"
@@ -62,7 +102,16 @@ function StepFive() {
                   >
                     Company Name
                   </label>
-                  <Input name="Technology Company" />
+                  <Input
+                    className="text-[14px] relative top-[-10px]"
+                    id="input-box2"
+                    value={input2}
+                    callback={(e) => {
+                      setInput2(e.target.value);
+                      checkIfFielsIsEmpty();
+                    }}
+                    name="Technology Company"
+                  />
                 </div>
               </div>
 
@@ -74,8 +123,18 @@ function StepFive() {
                   >
                     Work Email
                   </label>
-                  <Input name="Fintech/Finance" />
+                  <Input
+                    className=" text-[14px] relative top-[-10px]"
+                    id="input-box3"
+                    value={input3}
+                    callback={(e) => {
+                      setInput3(e.target.value);
+                      checkIfFielsIsEmpty();
+                    }}
+                    name="Fintech/Finance"
+                  />
                 </div>
+
                 <div className="mt-5 mb-5">
                   <label
                     className="text-[14px] relative top-[-10px]"
@@ -83,7 +142,16 @@ function StepFive() {
                   >
                     Position
                   </label>
-                  <Input name="Automotive" />
+                  <Input
+                    className="text-[14px] relative top-[-10px]"
+                    id="input-box4"
+                    value={input4}
+                    callback={(e) => {
+                      setInput4(e.target.value);
+                      checkIfFielsIsEmpty();
+                    }}
+                    name="Automotive"
+                  />
                 </div>
               </div>
             </div>
@@ -95,12 +163,28 @@ function StepFive() {
           </div>
 
           <section>
-            <Textarea />
+            <Textarea id="message-textarea" type="text" />
             <br />
 
-            <Link to="/step-six">
-              <Button pic={ArrowR} value="Next" className="hire-next-button" />
-            </Link>
+            {disable ? (
+              <div>
+                <Button
+                  className=" hire-next-button text-center hover:bg-[#032555]  cursor-not-allowed opacity-[0.5]"
+                  pic={ArrowR}
+                  value="Next"
+                />
+              </div>
+            ) : (
+              <div>
+                <Link to="/step-six">
+                  <Button
+                    className=" hire-next-button hire-hover text-center cursor-pointer"
+                    pic={ArrowR}
+                    value="Next"
+                  />
+                </Link>
+              </div>
+            )}
 
             <Link to="/step-four">
               <Button2

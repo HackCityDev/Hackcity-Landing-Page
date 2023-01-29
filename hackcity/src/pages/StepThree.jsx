@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import man from "../assets/Images/hire/pana.png";
 import ArrowL from "../assets/Images/hire/ArrowRight (1).png";
 import ArrowR from "../assets/Images/hire/ArrowRight (2).png";
@@ -10,8 +10,25 @@ import CheckBox from "../components/CheckBox";
 
 import { Link } from "react-router-dom";
 
+function StepThree(value, callback) {
+  const [checkbox, setCheckbox] = useState(false);
 
-function StepThree() {
+  function checkIfFielsIsEmpty() {
+    const file = document.querySelectorAll(".check");
+
+    let checkedCount = 0;
+    file.forEach((element) => {
+      if (element.checked) {
+        checkedCount++;
+      }
+    });
+
+    if (checkedCount === 0) {
+      setCheckbox(false);
+    } else {
+      setCheckbox(true);
+    }
+  }
   return (
     <div className="">
       <section className="flex flex-col text-center lg:flex-row">
@@ -41,36 +58,104 @@ function StepThree() {
           <div>
             <div className="mb-3 text-[15px] flex items-center">
               <div className="w-[15px] h-[15px] mr-2 bg-[#032555] rounded-2xl"></div>
-              <h3>Which best describes your requirement/engagement timeline?</h3>
+              <h3>
+                Which best describes your requirement/engagement timeline?
+              </h3>
             </div>
 
             <div className="">
               <div className="">
-                <CheckBox name="Short Term (Up to 3 months)" />
-                <CheckBox name="Medium Term (3 to 6 Months)" />
-                <CheckBox name="Long Term (More than 6 months)" />
-              </div>
+                <CheckBox
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="Short Term (Up to 3 months)"
+                />
 
-            
+                <CheckBox
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="Medium Term (3 to 6 Months)"
+                />
+
+                <CheckBox
+                  className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="Long Term (More than 6 months)"
+                />
+              </div>
             </div>
 
             <div className="mb-3 mt-8 text-[15px] flex items-center">
               <div className="w-[15px] h-[15px] mr-2 bg-[#032555] rounded-2xl"></div>
               <h3>When are you likely to start this project?</h3>
-
             </div>
           </div>
           <div className="">
-                <CheckBox name="Immediately" />
-                <CheckBox name="Within 2 weeks" />
-                <CheckBox name="Within a month" />
-                <CheckBox name="Not decided" />
-              </div>
-          <section className ='mt-8'>
+            <CheckBox
+              className="check mr-3 ml-2 border"
+              callback={(e) => {
+                setCheckbox(e.target.value);
+                checkIfFielsIsEmpty();
+              }}
+              value="Immediately"
+            />
 
-            <Link to="/step-four">
-              <Button pic={ArrowR} value="Next" className="hire-next-button" />
-            </Link>
+            <CheckBox
+              className="check mr-3 ml-2 border"
+              callback={(e) => {
+                setCheckbox(e.target.value);
+                checkIfFielsIsEmpty();
+              }}
+              value="Within 2 weeks"
+            />
+
+            <CheckBox
+              className="check mr-3 ml-2 border"
+              callback={(e) => {
+                setCheckbox(e.target.value);
+                checkIfFielsIsEmpty();
+              }}
+              value="Within a month"
+            />
+
+            <CheckBox
+              className="check mr-3 ml-2 border"
+              callback={(e) => {
+                setCheckbox(e.target.value);
+                checkIfFielsIsEmpty();
+              }}
+              value="Not decided"
+            />
+          </div>
+          <section className="mt-8">
+            {!checkbox ? (
+              <div>
+                <Button
+                  className=" hire-next-button text-center hover:bg-[#032555]  cursor-not-allowed opacity-[0.5]"
+                  pic={ArrowR}
+                  value="Next"
+                />
+              </div>
+            ) : (
+              <div>
+                <Link to="/step-four">
+                  <Button
+                    className=" hire-next-button hire-hover text-center cursor-pointer"
+                    pic={ArrowR}
+                    value="Next"
+                  />
+                </Link>
+              </div>
+            )}
 
             <Link to="/step-two">
               <Button2

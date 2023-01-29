@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import man from "../assets/Images/hire/pana (2).png";
 import ArrowL from "../assets/Images/hire/ArrowRight (1).png";
 import ArrowR from "../assets/Images/hire/ArrowRight (2).png";
@@ -11,7 +11,31 @@ import Textarea from "../components/Textarea";
 
 import { Link } from "react-router-dom";
 
-function StepTwo({ status, handleOption, handleChange }) {
+function StepTwo({ value, callback }) {
+
+  const [checkbox, setCheckbox] = useState(false);
+  const [text, setText] = useState("");
+
+  function checkIfFielsIsEmpty() {
+    const file = document.querySelectorAll(".check");
+    const message = document.querySelector("#message").value;
+
+    let checkedCount = 0;
+    file.forEach((element) => {
+      if (element.checked) {
+        checkedCount++;
+      }
+    });
+
+    var msgLength = message.trim().length;
+
+    if (checkedCount === 0 && msgLength === 0) {
+      setCheckbox(false);
+    } else {
+      setCheckbox(true);
+    }
+  }
+
   return (
     <div className="">
       <section className="flex flex-col text-center lg:flex-row">
@@ -47,47 +71,77 @@ function StepTwo({ status, handleOption, handleChange }) {
             <div className="flex flex-col md:flex-row justify-between">
               <div className="">
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Healthcare and Pharma"
+                    className="check mr-3 ml-2 border"
+                    callback={(e) => {
+                      setCheckbox(e.target.value);
+                      checkIfFielsIsEmpty();
+                    }}
+                  value="Healthcare and Pharma"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Technology Company"
+                     className="check mr-3 ml-2 border"
+                     callback={(e) => {
+                       setCheckbox(e.target.value);
+                       checkIfFielsIsEmpty();
+                     }}
+                  value="Technology Company"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Logistics & Transport"
+                     className="check mr-3 ml-2 border"
+                     callback={(e) => {
+                       setCheckbox(e.target.value);
+                       checkIfFielsIsEmpty();
+                     }}
+                  value="Logistics & Transport"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Insurance"
+                     className="check mr-3 ml-2 border"
+                     callback={(e) => {
+                       setCheckbox(e.target.value);
+                       checkIfFielsIsEmpty();
+                     }}
+                  value="Insurance"
                 />
               </div>
 
               <div className="">
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Fintech/Finance"
+                     className="check mr-3 ml-2 border"
+                     callback={(e) => {
+                       setCheckbox(e.target.value);
+                       checkIfFielsIsEmpty();
+                     }}
+                  value="Fintech/Finance"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Automotive"
+                     className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="Automotive"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Education"
+                     className="check mr-3 ml-2 border"
+                     callback={(e) => {
+                       setCheckbox(e.target.value);
+                       checkIfFielsIsEmpty();
+                     }}
+                  value="Education"
                 />
+
                 <CheckBox
-                  status={status}
-                  handleOption={handleOption}
-                  title="Blockchain"
+                     className="check mr-3 ml-2 border"
+                  callback={(e) => {
+                    setCheckbox(e.target.value);
+                    checkIfFielsIsEmpty();
+                  }}
+                  value="Blockchain"
                 />
               </div>
             </div>
@@ -99,10 +153,17 @@ function StepTwo({ status, handleOption, handleChange }) {
           </div>
 
           <section>
-            <Textarea status={status} handleChange={handleChange} />
+              <Textarea
+              id="message"
+              type="text"
+              callback={(e) => {
+                setText(e.target.value);
+                checkIfFielsIsEmpty();
+              }}
+            />
             <br />
 
-            {!status ? (
+            {!checkbox && !text ? (
               <div>
                 <Button
                   className=" hire-next-button text-center hover:bg-[#032555]  cursor-not-allowed opacity-[0.5]"
