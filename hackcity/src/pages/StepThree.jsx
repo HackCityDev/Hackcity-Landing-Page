@@ -12,21 +12,31 @@ import { Link } from "react-router-dom";
 
 function StepThree(value, callback) {
   const [checkbox, setCheckbox] = useState(false);
+  const [checkbox2, setCheckbox2] = useState(false);
 
   function checkIfFielsIsEmpty() {
-    const file = document.querySelectorAll(".check");
+    const checkboxes = document.querySelectorAll(".check");
+    const checkboxes2 = document.querySelectorAll(".check2");
 
     let checkedCount = 0;
-    file.forEach((element) => {
+    checkboxes.forEach((element) => {
       if (element.checked) {
         checkedCount++;
       }
     });
+    let checkedCount2 = 0;
+    checkboxes2.forEach((element) => {
+      if (element.checked) {
+        checkedCount2++;
+      }
+    });
 
-    if (checkedCount === 0) {
-      setCheckbox(false);
-    } else {
+    if (checkedCount > 0 && checkedCount2 > 0) {
       setCheckbox(true);
+      setCheckbox2(true);
+    } else {
+      setCheckbox(false);
+      setCheckbox2(false);
     }
   }
   return (
@@ -101,43 +111,43 @@ function StepThree(value, callback) {
           </div>
           <div className="">
             <CheckBox
-              className="check mr-3 ml-2 border"
+              className="check2 mr-3 ml-2 border"
               callback={(e) => {
-                setCheckbox(e.target.value);
+                setCheckbox2(e.target.value);
                 checkIfFielsIsEmpty();
               }}
               value="Immediately"
             />
 
             <CheckBox
-              className="check mr-3 ml-2 border"
+              className="check2 mr-3 ml-2 border"
               callback={(e) => {
-                setCheckbox(e.target.value);
+                setCheckbox2(e.target.value);
                 checkIfFielsIsEmpty();
               }}
               value="Within 2 weeks"
             />
 
             <CheckBox
-              className="check mr-3 ml-2 border"
+              className="check2 mr-3 ml-2 border"
               callback={(e) => {
-                setCheckbox(e.target.value);
+                setCheckbox2(e.target.value);
                 checkIfFielsIsEmpty();
               }}
               value="Within a month"
             />
 
             <CheckBox
-              className="check mr-3 ml-2 border"
+              className="check2 mr-3 ml-2 border"
               callback={(e) => {
-                setCheckbox(e.target.value);
+                setCheckbox2(e.target.value);
                 checkIfFielsIsEmpty();
               }}
               value="Not decided"
             />
           </div>
           <section className="mt-8">
-            {!checkbox ? (
+            {!checkbox && !checkbox2 ? (
               <div>
                 <Button
                   className=" hire-next-button text-center hover:bg-[#032555]  cursor-not-allowed opacity-[0.5]"
