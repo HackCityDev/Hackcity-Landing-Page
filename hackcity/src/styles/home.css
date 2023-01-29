@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+.services {
+  background: linear-gradient(
+    0deg,
+    rgba(241, 246, 253, 0) 1.63%,
+    #f1f6fd 20.5%,
+    #f1f6fd 58.57%,
+    #ffffff 100%
+  );
+}
+.footer {
+  background: linear-gradient(192.7deg, #152a47 14.55%, #032555 91.2%);
+  border: 1px solid #000000;
+}
+.hire-next-button, .hire-prev-button {
+  float: right;
+  background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+  color: #c0c0c0;
+  font-size: 14px;
+  width: 180px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 50px;
+
+}
+.button1{
+  background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+  color: #fff;
+  font-size: 14px;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  
+}
+.hire-hover:hover, .button1:hover {
+  background: #f1f6fd;
+  border: 1px solid #032555;
+  color: #032555;
+  transition: 200ms ease-in-out;
+}
+
+.hire-prev-button{
+  background:#eef2ff!important;
+  float: left;
+  color: #032555;
+  border: 1px solid #032555;
+}
+
+.button2{
+  background:#eef2ff!important;
+  color: #032555;
+  border: 1px solid #032555;
+  font-size: 14px;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+}
+
+.hire-prev-button:hover, .button2:hover{
+  background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%)!important;
+  color: #fff;
+  transition: 200ms ease-in-out;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  font-size: 13px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media screen and (max-width:400px){
+  .hire-next-button, .hire-prev-button {
+    float: none;
+    margin: auto;
+    margin-top: 30px;
+  
+  }
+
+
+}
+@media screen and (max-width:768px){
+  .hire-next-button, .hire-prev-button {
+    width: 150px;
+    height: 40px;
+    padding-left: 30px;
+  
+  }
+
+  .hire-prev-button{
+    padding-left: 50px;
+  }
+}
