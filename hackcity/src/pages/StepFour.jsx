@@ -6,7 +6,7 @@ import Button2 from "../components/PrevButton";
 import Footer from "../components/Footer";
 import Logo from "../components/Logo";
 import Button from "../components/NextButton";
-import CheckBox from "../components/CheckBox";
+import Radio from "../components/Radio"
 
 import { Link } from "react-router-dom";
 
@@ -63,7 +63,8 @@ function StepFour() {
             </div>
           </div>
           <div className="">
-            <CheckBox
+            <Radio
+            name ='group3'
               className="check mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox(e.target.value);
@@ -72,7 +73,8 @@ function StepFour() {
               value="$1,000 - $3,000+"
             />
 
-            <CheckBox
+            <Radio
+            name ='group3'
               className="check mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox(e.target.value);
@@ -81,7 +83,8 @@ function StepFour() {
               value="$4,000 - $9,000+"
             />
 
-            <CheckBox
+            <Radio
+            name ='group3'
               className="check mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox(e.target.value);
@@ -90,7 +93,8 @@ function StepFour() {
               value="$10,000 and above"
             />
 
-            <CheckBox
+            <Radio
+            name ='group3'
               className="check mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox(e.target.value);

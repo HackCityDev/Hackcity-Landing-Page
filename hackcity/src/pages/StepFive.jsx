@@ -91,7 +91,7 @@ function StepFive(callback, id) {
                       setInput1(e.target.value);
                       checkIfFielsIsEmpty();
                     }}
-                    name="Healthcare and Pharma"
+                    name="John Jane"
                   />
                 </div>
 
@@ -110,7 +110,7 @@ function StepFive(callback, id) {
                       setInput2(e.target.value);
                       checkIfFielsIsEmpty();
                     }}
-                    name="Technology Company"
+                    name="HACKCITY TECH INC"
                   />
                 </div>
               </div>
@@ -131,7 +131,7 @@ function StepFive(callback, id) {
                       setInput3(e.target.value);
                       checkIfFielsIsEmpty();
                     }}
-                    name="Fintech/Finance"
+                    name="johnjane@gmail.com"
                   />
                 </div>
 
@@ -150,7 +150,7 @@ function StepFive(callback, id) {
                       setInput4(e.target.value);
                       checkIfFielsIsEmpty();
                     }}
-                    name="Automotive"
+                    name="Director"
                   />
                 </div>
               </div>

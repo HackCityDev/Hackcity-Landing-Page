@@ -6,7 +6,7 @@ import Button2 from "../components/PrevButton";
 import Footer from "../components/Footer";
 import Logo from "../components/Logo";
 import Button from "../components/NextButton";
-import CheckBox from "../components/CheckBox";
+import Radio from "../components/Radio";
 
 import { Link } from "react-router-dom";
 
@@ -75,7 +75,8 @@ function StepThree(value, callback) {
 
             <div className="">
               <div className="">
-                <CheckBox
+                <Radio
+                  name="group1"
                   className="check mr-3 ml-2 border"
                   callback={(e) => {
                     setCheckbox(e.target.value);
@@ -84,7 +85,8 @@ function StepThree(value, callback) {
                   value="Short Term (Up to 3 months)"
                 />
 
-                <CheckBox
+                <Radio
+                  name="group1"
                   className="check mr-3 ml-2 border"
                   callback={(e) => {
                     setCheckbox(e.target.value);
@@ -93,7 +95,8 @@ function StepThree(value, callback) {
                   value="Medium Term (3 to 6 Months)"
                 />
 
-                <CheckBox
+                <Radio
+                  name="group1"
                   className="check mr-3 ml-2 border"
                   callback={(e) => {
                     setCheckbox(e.target.value);
@@ -110,7 +113,8 @@ function StepThree(value, callback) {
             </div>
           </div>
           <div className="">
-            <CheckBox
+            <Radio
+              name="group2"
               className="check2 mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox2(e.target.value);
@@ -119,7 +123,8 @@ function StepThree(value, callback) {
               value="Immediately"
             />
 
-            <CheckBox
+            <Radio
+              name="group2"
               className="check2 mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox2(e.target.value);
@@ -128,7 +133,8 @@ function StepThree(value, callback) {
               value="Within 2 weeks"
             />
 
-            <CheckBox
+            <Radio
+              name="group2"
               className="check2 mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox2(e.target.value);
@@ -137,7 +143,8 @@ function StepThree(value, callback) {
               value="Within a month"
             />
 
-            <CheckBox
+            <Radio
+              name="group2"
               className="check2 mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox2(e.target.value);
