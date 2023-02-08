@@ -10,16 +10,16 @@ import play from "../assets/Images/play.png";
 function Services() {
   return (
     <div className="services">
-      <h2 className="mt-12 text-center text-[20px] md:text-[25px] font-semibold">
+      <h2 className="mt-12 text-center text-[28px] md:text-[30px] font-semibold">
         Our Services
       </h2>
-      <section className="flex items-center flex-col md:flex-row justify-evenly py-12 px-6 md:px-8 lg:px-20">
-        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-[300px] h-[300px] md:h-[350px]">
+      <section className="flex items-center flex-col md:flex-row justify-evenly py-12 px-4 md:px-8 lg:px-20">
+        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-full h-[330px] md:h-[350px]">
           <img className="w-[40px] mt-5" src={web} alt="web" />
-          <h3 className="text-[16px] lg:text-[17px] font-semibold py-4">
+          <h3 className="text-[18px] lg:text-[19px] font-semibold py-4">
             Web Application
           </h3>
-          <p className="text-[14px] lg:text-[16px]">
+          <p className="text-[16px] lg:text-[17px]">
             Design and development of websites and web applications of all kind.
             Our experienced developers handle it all.
           </p>
@@ -31,12 +31,12 @@ function Services() {
           </div>
         </div>
 
-        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-[300px] h-[300px] md:h-[350px]">
+        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-full h-[330px] md:h-[350px]">
           <img className="w-[40px] mt-5" src={mobile} alt="mobile" />
-          <h3 className="text-[16px] lg:text-[17px] font-semibold py-4">
+          <h3 className="text-[18px] lg:text-[19px] font-semibold py-4">
             Mobile Application
           </h3>
-          <p className="text-[15px] lg:text-[16px]">
+          <p className="text-[16px] lg:text-[17px]">
             Hack city tech focus on user experience making your potential
             customers engaged
           </p>
@@ -48,12 +48,12 @@ function Services() {
           </div>
         </div>
 
-        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-[300px] h-[300px] md:h-[350px]">
+        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-full h-[330px] md:h-[350px]">
           <img className="w-[40px] mt-5" src={block} alt="blockchain" />
-          <h3 className="text-[16px] lg:text-[17px] font-semibold py-4">
+          <h3 className="text-[18px] lg:text-[19px] font-semibold py-4">
             Blockchain Application
           </h3>
-          <p className="text-[15px] lg:text-[16px]">
+          <p className="text-[16px] lg:text-[17px]">
             Hack city tech focus on user experience making your potential
             customers engaged
           </p>
@@ -66,13 +66,14 @@ function Services() {
         </div>
       </section>
 
-      <section className="flex items-center flex-col md:flex-row m-auto justify-evenly py-0 md:px-8 lg:px-20">
-        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-[300px] h-[300px] md:h-[350px]">
+
+      <section className="flex items-center flex-col md:flex-row justify-evenly py-12 px-4 md:px-8 lg:px-20">
+        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-full h-[330px] md:h-[350px]">
           <img className="w-[40px] mt-5" src={game} alt="mobile" />
-          <h3 className="text-[16px] lg:text-[17px] font-semibold py-4">
+          <h3 className="text-[18px] lg:text-[19px] font-semibold py-4">
             Game Application
           </h3>
-          <p className="text-[15px] lg:text-[16px]">
+          <p className="text-[16px] lg:text-[17px]">
             Hack city tech focus on user experience making your potential
             customers engaged
           </p>
@@ -84,12 +85,12 @@ function Services() {
           </div>
         </div>
 
-        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-[300px] h-[300px] md:h-[350px]">
+        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-full h-[330px] md:h-[350px]">
           <img className="w-[40px] mt-5" src={bot} alt="mobile" />
-          <h3 className="text-[16px] lg:text-[17px] font-semibold py-4">
+          <h3 className="text-[18px] lg:text-[19px] font-semibold py-4">
             Bot Application
           </h3>
-          <p className="text-[15px] lg:text-[16px]">
+          <p className="text-[16px] lg:text-[17px]">
             Hack city tech focus on user experience making your potential
             customers engaged
           </p>
@@ -101,12 +102,12 @@ function Services() {
           </div>
         </div>
 
-        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-[300px] h-[300px] md:h-[350px]">
+        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-full h-[330px] md:h-[350px]">
           <img className="w-[40px] mt-5" src={pnp} alt="mobile" />
-          <h3 className="text-[16px] lg:text-[17px] font-semibold py-4">
+          <h3 className="text-[18px] lg:text-[19px] font-semibold py-4">
             PnP Microservice
           </h3>
-          <p className="text-[15px] lg:text-[16px]">
+          <p className="text-[16px] lg:text-[17px]">
             Hack city tech focus on user experience making your potential
             customers engaged
           </p>

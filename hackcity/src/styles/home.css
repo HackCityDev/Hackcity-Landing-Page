@@ -16,6 +16,10 @@ body {
     #ffffff 100%
   );
 }
+/* .navbar {
+box-shadow: 0px 2px 2px 2px red;
+} */
+
 .footer {
   background: linear-gradient(192.7deg, #152a47 14.55%, #032555 91.2%);
   border: 1px solid #000000;
@@ -92,6 +96,14 @@ body {
   display: block;
 }
 
+.circle{
+  background: #032555;
+  height: 15px;
+  width:  15px;
+  border-radius: 50%;
+  padding-right:15px;
+  margin-right: 5px;
+}
 
 @media screen and (max-width:400px){
   .hire-next-button, .hire-prev-button {

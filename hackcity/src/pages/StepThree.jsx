@@ -42,19 +42,19 @@ function StepThree(value, callback) {
   return (
     <div className="">
       <section className="flex flex-col text-center lg:flex-row">
-        <div className="bg-[#f1f6fd] lg:w-[35%] h-[80vh] lg:h-[118vh]">
+        <div className="bg-[#f1f6fd] lg:w-[35%] md:h-[80vh] lg:h-[118vh]">
           <h1 className=" mt-12 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
           <p className="text-[13px] text-[#656464]">step Three</p>
           <img
-            className="w-[400px] m-auto lg:w-[550px] lg:mt-24 z-20 lg:absolute"
+            className="w-[400px] m-auto hidden md:block lg:w-[550px] lg:mt-24 z-20 lg:absolute"
             src={man}
             alt="illustration"
           />
         </div>
 
-        <div className="p-8 text-left mt-4 lg:ml-10 z-30">
+        <div className="p-4 md:p-8 text-left mt-4 lg:ml-10 z-30">
           <h4 className="text-[#032555] text-[16px] mb-8 font-semibold">
             We boast of highly skilled and experienced tech <br /> personnel, We
             handle every projects with experience
@@ -67,7 +67,7 @@ function StepThree(value, callback) {
           <hr className="mb-12 border border-[6px] rounded-2xl w-[100%] border-[#d9e7ff]" />
           <div>
             <div className="mb-3 text-[15px] flex items-center">
-              <div className="w-[15px] h-[15px] mr-2 bg-[#032555] rounded-2xl"></div>
+              <div className="circle"></div>
               <h3>
                 Which best describes your requirement/engagement timeline?
               </h3>
@@ -108,7 +108,7 @@ function StepThree(value, callback) {
             </div>
 
             <div className="mb-3 mt-8 text-[15px] flex items-center">
-              <div className="w-[15px] h-[15px] mr-2 bg-[#032555] rounded-2xl"></div>
+              <div className="circle"></div>
               <h3>When are you likely to start this project?</h3>
             </div>
           </div>

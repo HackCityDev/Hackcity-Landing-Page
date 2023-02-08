@@ -6,7 +6,7 @@ import Button2 from "../components/PrevButton";
 import Footer from "../components/Footer";
 import Logo from "../components/Logo";
 import Button from "../components/NextButton";
-import Radio from "../components/Radio"
+import Radio from "../components/Radio";
 
 import { Link } from "react-router-dom";
 
@@ -33,19 +33,19 @@ function StepFour() {
   return (
     <div className="">
       <section className="flex text-center flex-col lg:flex-row">
-        <div className="bg-[#f1f6fd] lg:w-[35%] h-[70vh] lg:h-[118vh]">
+        <div className="bg-[#f1f6fd] lg:w-[35%] md:h-[70vh] lg:h-[118vh]">
           <h1 className=" mt-12 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
           <p className="text-[13px] text-[#656464]">step Four</p>
           <img
-            className="w-[400px] m-auto lg:w-[550px] lg:mt-24 z-20 lg:absolute"
+            className="w-[400px] hidden md:block m-auto lg:w-[550px] lg:mt-24 z-20 lg:absolute"
             src={man}
             alt="illustration"
           />
         </div>
 
-        <div className="p-8 text-left mt-4 lg:ml-10 z-30">
+        <div className="p-4 md:p-8 text-left mt-4 lg:ml-10 z-30">
           <h4 className="text-[#032555] text-[16px] mb-8 font-semibold">
             We boast of highly skilled and experienced tech <br /> personnel, We
             handle every projects with experience
@@ -58,13 +58,13 @@ function StepFour() {
           <hr className="mb-16 border border-[6px] rounded-2xl w-[100%] lg:w-[700px] border-[#d9e7ff]" />
           <div>
             <div className="mb-3 mt-8 text-[15px] flex items-center">
-              <div className="w-[15px] h-[15px] mr-2 bg-[#032555] rounded-2xl"></div>
+              <div className="circle"></div>
               <h3>What is the price estimate for this project</h3>
             </div>
           </div>
           <div className="">
             <Radio
-            name ='group3'
+              name="group3"
               className="check mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox(e.target.value);
@@ -74,7 +74,7 @@ function StepFour() {
             />
 
             <Radio
-            name ='group3'
+              name="group3"
               className="check mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox(e.target.value);
@@ -84,7 +84,7 @@ function StepFour() {
             />
 
             <Radio
-            name ='group3'
+              name="group3"
               className="check mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox(e.target.value);
@@ -94,7 +94,7 @@ function StepFour() {
             />
 
             <Radio
-            name ='group3'
+              name="group3"
               className="check mr-3 ml-2 border"
               callback={(e) => {
                 setCheckbox(e.target.value);

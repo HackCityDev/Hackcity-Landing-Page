@@ -22,7 +22,7 @@ function StepSix() {
           />
         </div>
 
-        <div className="p-8 text-left mt-4 lg:ml-10 z-30">
+        <div className="p-4 md:p-8 text-left mt-4 lg:ml-10 z-30">
           <h4 className="text-[#032555] text-[16px] mb-8 font-semibold">
             We boast of highly skilled and experienced tech <br /> personnel, We
             handle every projects with experience

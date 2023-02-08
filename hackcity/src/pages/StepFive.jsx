@@ -45,19 +45,19 @@ function StepFive(callback, id) {
   return (
     <div className="">
       <section className="flex text-center flex-col lg:flex-row">
-        <div className="bg-[#f1f6fd] lg:w-[35%] h-[70vh] lg:h-[118vh]">
+        <div className="bg-[#f1f6fd] lg:w-[35%] md:h-[70vh] lg:h-[118vh]">
           <h1 className=" mt-12 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
           <p className="text-[13px] text-[#656464]">Step Five</p>
           <img
-            className="w-[400px] lg:w-[550px] m-auto lg:mt-24 z-20 lg:absolute"
+            className="w-[400px] hidden md:block lg:w-[550px] m-auto lg:mt-24 z-20 lg:absolute"
             src={man}
             alt="illustration"
           />
         </div>
 
-        <div className="p-8 text-left mt-4 lg:ml-10 z-30">
+        <div className="p-4 md:p-8 text-left mt-4 lg:ml-10 z-30">
           <h4 className="text-[#032555] text-[16px] mb-8 font-semibold">
             We boast of highly skilled and experienced tech <br /> personnel, We
             handle every projects with experience
@@ -70,7 +70,7 @@ function StepFive(callback, id) {
           <hr className="mb-12 border border-[6px] rounded-2xl w-[100%] lg:w-[700px] border-[#d9e7ff]" />
           <div>
             <div className="mb-3 text-[15px] flex items-center">
-              <div className="w-[15px] h-[15px] mr-2 bg-[#032555] rounded-2xl"></div>
+              <div className="circle"></div>
               <h3>Please fill your credentials</h3>
             </div>
 
@@ -157,7 +157,7 @@ function StepFive(callback, id) {
             </div>
 
             <div className="mb-3 mt-0 text-[15px] flex items-center">
-              <div className="w-[15px] h-[15px] mr-2 bg-[#032555] rounded-2xl"></div>
+              <div className="circle"></div>
               <h3>Other Information</h3>
             </div>
           </div>

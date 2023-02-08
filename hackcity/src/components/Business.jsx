@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 function Business() {
   return (
-    <div className="flex flex-col mt-10 md:mt-20 items-center md:flex-row px-6 md:px-8 lg:px-20">
+    <div className="flex flex-col mt-10 md:mt-20 items-center md:flex-row px-4 md:px-8 lg:px-20">
       <div className="md:w-[50%]">
         <h5 className="text-[#eb5757] font-semibold ">Why Hire Us</h5>
-        <h2 className="text-[25px] md:text-[30px] font-semibold text-[#032555] leading-[40px] mt-3 mb-5">
+        <h2 className="text-[30px] font-semibold text-[#032555] leading-[40px] mt-3 mb-5">
           Business Solutions that <br /> will Help You Grow
         </h2>
-        <p className="text-gray-600 font-semibold text-[15px]">
+        <p className="text-gray-600 font-semibold text-[17px]">
           Beyond providing tech. support and development, we also provide tech
           startups with marketing resources and the business operations support
           they need to get their project or company from an idea to a
