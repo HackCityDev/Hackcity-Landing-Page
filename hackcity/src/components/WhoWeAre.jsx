@@ -44,7 +44,7 @@ function WhoWeAre() {
             development services
           </i>
         </div>
-        <div className="shadow-2xl shadow-inner rounded-[14px] mb-10 p-5 w-full h-[200px] md:w-full md:h-[200px] text-left items-center m-auto">
+        <div className="shadow-2xl md:ml-2 md:mr-2 shadow-inner rounded-[14px] mb-10 p-5 w-full h-[200px] md:w-full md:h-[200px] text-left items-center m-auto">
           <div className="flex items-center mb-10 md:mb-5 font-bold">
             <img className="w-[40px]" src={vetted} alt="vetted" />
             <h5 className="ml-5"> Vetted + Experienced</h5>

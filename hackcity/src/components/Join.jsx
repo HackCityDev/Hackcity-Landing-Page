@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../assets/Images/ArrowRight.png";
+import { Link } from "react-router-dom";
 
 function Join() {
   return (
@@ -14,10 +14,9 @@ function Join() {
           team to build their products efficiently, we also provide marketing
           and business operations support/resources.
         </p>
-        <button className="bg-[#032555] text-white text-[13px] px-12 py-3 mb-10 mt-10 flex items-center">
-          Join us{" "}
-          <img className="ml-3 w-[12px] mt-1" src={arrow} alt="arrow right" />
-        </button>
+        <Link to="/">
+          <button className="button1 mr-10 mt-10">Join us</button>
+        </Link>
       </div>
     </div>
   );

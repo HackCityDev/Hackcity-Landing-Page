@@ -31,7 +31,7 @@ function Services() {
           </div>
         </div>
 
-        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-full h-[330px] md:h-[350px]">
+        <div className="rounded-[14px] md:ml-2 md:mr-2 mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-full h-[330px] md:h-[350px]">
           <img className="w-[40px] mt-5" src={mobile} alt="mobile" />
           <h3 className="text-[18px] lg:text-[19px] font-semibold py-4">
             Mobile Application
@@ -85,7 +85,7 @@ function Services() {
           </div>
         </div>
 
-        <div className="rounded-[14px] mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-full h-[330px] md:h-[350px]">
+        <div className="rounded-[14px] md:ml-2 md:mr-2 mb-10 md:mb-0 p-5 shadow-inner shadow-2xl w-full h-[330px] md:h-[350px]">
           <img className="w-[40px] mt-5" src={bot} alt="mobile" />
           <h3 className="text-[18px] lg:text-[19px] font-semibold py-4">
             Bot Application

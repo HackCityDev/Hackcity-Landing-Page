@@ -42,13 +42,13 @@ function StepThree(value, callback) {
   return (
     <div className="">
       <section className="flex flex-col text-center lg:flex-row">
-        <div className="bg-[#f1f6fd] lg:w-[35%] md:h-[80vh] lg:h-[118vh]">
+        <div className="bg-[#f1f6fd] lg:w-[35%] lg:h-[80vh] lg:h-[118vh]">
           <h1 className=" mt-12 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
-          <p className="text-[13px] text-[#656464]">step Three</p>
+          <p className="text-[13px] text-[#656464] mb-8 lg:mb-0">step Three</p>
           <img
-            className="w-[400px] m-auto hidden md:block lg:w-[550px] lg:mt-24 z-20 lg:absolute"
+            className="w-[400px] m-auto hidden lg:block lg:w-[550px] lg:mt-24 z-20 lg:absolute"
             src={man}
             alt="illustration"
           />

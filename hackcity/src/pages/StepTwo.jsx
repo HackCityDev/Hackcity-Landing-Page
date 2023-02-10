@@ -38,13 +38,13 @@ function StepTwo({ value, callback }) {
   return (
     <div className="">
       <section className="flex flex-col text-center lg:flex-row">
-        <div className="bg-[#f1f6fd] lg:w-[35%] md:h-[90vh] lg:h-[118vh]">
+        <div className="bg-[#f1f6fd] lg:w-[35%] lg:h-[90vh] lg:h-[118vh]">
           <h1 className=" mt-10 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
-          <p className="text-[13px] text-[#656464] mb-8 md:mb-0">step Two</p>
+          <p className="text-[13px] text-[#656464] mb-8 lg:mb-0">step Two</p>
           <img
-            className="w-[400px] m-auto hidden md:block lg:w-[550px] relative top-[-130px] lg:top-[-10px] z-20 lg:absolute"
+            className="w-[400px] m-auto hidden lg:block lg:w-[550px] relative top-[-130px] lg:top-[-10px] z-20 lg:absolute"
             src={man}
             alt="illustration"
           />

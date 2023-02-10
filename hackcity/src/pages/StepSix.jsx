@@ -10,7 +10,7 @@ function StepSix() {
   return (
     <div className="">
       <section className="flex text-center flex-col lg:flex-row">
-        <div className="bg-[#f1f6fd] lg:w-[35%] h-[70vh] lg:h-[105vh]">
+        <div className="bg-[#f1f6fd] lg:w-[35%] md:h-[70vh] lg:h-[105vh]">
           <h1 className=" mt-12 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>

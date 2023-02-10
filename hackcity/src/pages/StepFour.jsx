@@ -33,13 +33,13 @@ function StepFour() {
   return (
     <div className="">
       <section className="flex text-center flex-col lg:flex-row">
-        <div className="bg-[#f1f6fd] lg:w-[35%] md:h-[70vh] lg:h-[118vh]">
+        <div className="bg-[#f1f6fd] lg:w-[35%] lg:h-[70vh] lg:h-[118vh]">
           <h1 className=" mt-12 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
-          <p className="text-[13px] text-[#656464]">step Four</p>
+          <p className="text-[13px] text-[#656464] mb-8 lg:mb-0">step Four</p>
           <img
-            className="w-[400px] hidden md:block m-auto lg:w-[550px] lg:mt-24 z-20 lg:absolute"
+            className="w-[400px] hidden lg:block m-auto lg:w-[550px] lg:mt-24 z-20 lg:absolute"
             src={man}
             alt="illustration"
           />

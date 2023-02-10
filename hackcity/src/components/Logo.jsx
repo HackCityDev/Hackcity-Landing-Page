@@ -10,7 +10,7 @@ import logo7 from "../assets/Images/logo7.png";
 function Logo() {
   return (
     <div className="bg-[#f1f6fd] px-4 md:px-8 lg:px-20">
-      <h3 className="text-[#032555] pt-5 pb-3 mb-5 font-bold text-[18px]">
+      <h3 className="text-[#032555] pt-5 pb-3 mb-5 font-bold text-[18px] lg:text-[25px]">
         Successful Businesses & Startups
       </h3>
       <section className="flex flex-wrap justify-between">

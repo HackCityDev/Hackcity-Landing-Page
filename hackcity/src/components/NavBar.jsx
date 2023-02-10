@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/Images/logo.png";
 import arrow from "../assets/Images/arrowDown.png";
+import bars from "../assets/Images/bars-solid.svg";
 import "../styles/home.css";
 import { Link } from "react-router-dom";
 
@@ -9,10 +10,10 @@ function NavBar() {
 
   return (
     <div id="navbar">
-      <div className="navbar flex flex-row items-center justify-between py-6  px-4 md:px-8 md:my-2 lg:px-24">
+      <div className="navbar flex flex-row mb-2 items-center justify-between py-6 px-4 md:px-8 md:my-2 lg:px-24">
         <div className="logo">
           <img
-            className="w-[120px] md:w-[100px]"
+            className="w-[120px] md:w-[120px]"
             src={logo}
             alt="hackcity logo"
           />
@@ -22,7 +23,11 @@ function NavBar() {
           <div className="dropdown">
             <li className=" flex items-center px-2 md:px-4 hover:text-[#000] cursor-pointer">
               Services{" "}
-              <img src={arrow} className="ml-1 w-[8px] h-[6px] " alt="" />
+              <img
+                src={arrow}
+                className="ml-1 w-[8px] h-[6px] "
+                alt="dropdown arrow"
+              />
             </li>
             <div className="dropdown-content">
               <p className="hover:bg-[#eee] mb-1 px-1 text-center cursor-pointer">
@@ -47,22 +52,23 @@ function NavBar() {
 
         <div className="nav-button hidden md:block">
           <Link to="/hire">
-            <button className="bg-[#eb5757] py-3 px-4 text-[13px] text-white rounded-[15px] hover:bg-gray-900 hover:text-white">
+            <button className="bg-[#eb5757] py-3 px-8 text-[14px] text-white rounded-[15px] hover:bg-gray-900 hover:text-white">
               Hire Developers
             </button>
           </Link>
         </div>
 
-        <div className="flex md:hidden">
+        <div className="md:hidden">
           <div
-            className="space-y-2 "
+            className=""
             onClick={() => {
               setIsNavExpanded(!isNavExpanded);
             }}
           >
+            <img className="w-[25px] mr-2" src={bars} alt="mobile menu" />
+            {/* <span className="block w-[28px] py-0 h-[2px] bg-gray-600"></span>
             <span className="block w-[28px] py-0 h-[2px] bg-gray-600"></span>
-            <span className="block w-[28px] py-0 h-[2px] bg-gray-600"></span>
-            <span className="block w-[28px] py-0 h-[2px] bg-gray-600"></span>
+            <span className="block w-[28px] py-0 h-[2px] bg-gray-600"></span> */}
           </div>
         </div>
       </div>
@@ -101,7 +107,7 @@ function NavBar() {
 
         <div className="nav-button md:hidden flex flex-col items-center py-8">
           <Link to="/hire">
-            <button className="bg-[#eb5757] py-3 px-4 text-[13px] text-white rounded-[15px] hover:bg-gray-900 hover:text-white">
+            <button className="bg-[#eb5757] py-3 px-6 text-[14px] text-white rounded-[15px] hover:bg-gray-900 hover:text-white">
               Hire Developers
             </button>
           </Link>

@@ -35,13 +35,13 @@ function StepOne({ value, callback }) {
   return (
     <div className="">
       <section className="flex flex-col text-center lg:flex-row">
-        <div className="bg-[#f1f6fd] lg:w-[35%] md:h-[100vh]">
+        <div className="bg-[#f1f6fd] lg:w-[35%] lg:h-[100vh]">
           <h1 className=" mt-10 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
-          <p className="text-[13px] text-[#656464]">step One</p>
+          <p className="text-[13px] text-[#656464] mb-8 lg:mb-0">step One</p>
           <img
-            className="w-[400px] hidden m-auto md:block lg:w-[550px] mt-4 lg:mt-12 z-20 lg:absolute"
+            className="w-[400px] hidden m-auto lg:block lg:w-[550px] mt-4 lg:mt-12 z-20 lg:absolute"
             src={man}
             alt="illustration"
           />

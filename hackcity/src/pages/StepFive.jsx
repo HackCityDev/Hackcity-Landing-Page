@@ -45,13 +45,13 @@ function StepFive(callback, id) {
   return (
     <div className="">
       <section className="flex text-center flex-col lg:flex-row">
-        <div className="bg-[#f1f6fd] lg:w-[35%] md:h-[70vh] lg:h-[118vh]">
+        <div className="bg-[#f1f6fd] lg:w-[35%] lg:h-[70vh] lg:h-[118vh]">
           <h1 className=" mt-12 text-[#032555] text-[22px] font-semibold">
             Hire Us
           </h1>
-          <p className="text-[13px] text-[#656464]">Step Five</p>
+          <p className="text-[13px] text-[#656464] mb-8 lg:mb-0">Step Five</p>
           <img
-            className="w-[400px] hidden md:block lg:w-[550px] m-auto lg:mt-24 z-20 lg:absolute"
+            className="w-[400px] hidden lg:block lg:w-[550px] m-auto lg:mt-24 z-20 lg:absolute"
             src={man}
             alt="illustration"
           />
@@ -116,7 +116,7 @@ function StepFive(callback, id) {
               </div>
 
               <div>
-                <div className="mt-5 mb-5">
+                <div className=" mb-5">
                   <label
                     className="text-[14px] relative top-[-10px]"
                     htmlFor="Work Email"

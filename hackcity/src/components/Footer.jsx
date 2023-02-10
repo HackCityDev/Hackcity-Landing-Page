@@ -45,7 +45,7 @@ function Footer() {
             <p>Insights</p>
           </div>
 
-          <div className ='mr-10 mt-5 md:mr-0 '>
+          <div className ='mr-10 mt-5 md:mt-0 md:mr-0 '>
             <h4 className="text-[#9ca3af]">CONTACT US</h4>
             <div className="flex items-center py-1">
               {" "}

@@ -16,9 +16,9 @@ body {
     #ffffff 100%
   );
 }
-/* .navbar {
-box-shadow: 0px 2px 2px 2px red;
-} */
+.navbar {
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
 
 .footer {
   background: linear-gradient(192.7deg, #152a47 14.55%, #032555 91.2%);
@@ -29,7 +29,7 @@ box-shadow: 0px 2px 2px 2px red;
   background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
   color: #c0c0c0;
   font-size: 14px;
-  width: 180px;
+  width: 200px;
   height: 45px;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ box-shadow: 0px 2px 2px 2px red;
   background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
   color: #fff;
   font-size: 14px;
-  width: 150px;
+  width: 180px;
   height: 45px;
   text-align: center;
   
@@ -65,7 +65,7 @@ box-shadow: 0px 2px 2px 2px red;
   color: #032555;
   border: 1px solid #032555;
   font-size: 14px;
-  width: 150px;
+  width: 180px;
   height: 45px;
   text-align: center;
 }
@@ -117,9 +117,9 @@ box-shadow: 0px 2px 2px 2px red;
 }
 @media screen and (max-width:768px){
   .hire-next-button, .hire-prev-button {
-    width: 150px;
+    width: 180px;
     height: 40px;
-    padding-left: 30px;
+    padding-left: 50px;
   
   }
 
