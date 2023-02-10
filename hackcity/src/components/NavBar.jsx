@@ -10,7 +10,7 @@ function NavBar() {
 
   return (
     <div id="navbar">
-      <div className="navbar flex flex-row mb-2 items-center justify-between py-6 px-4 md:px-8 md:my-2 lg:px-24">
+      <div className="navbar flex flex-row mb-2 items-center justify-between py-8 px-4 my-2 md:px-8 md:my-2 lg:px-24">
         <div className="logo">
           <img
             className="w-[120px] md:w-[120px]"
